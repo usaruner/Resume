@@ -1,0 +1,9 @@
+(function(){'use strict';angular.module('angular-click-outside',[]).directive('clickOutside',['$document','$parse','$timeout',clickOutside]);function clickOutside($document,$parse,$timeout){return{restrict:'A',link:function($scope,elem,attr){$timeout(function(){var classList=(attr.outsideIfNot!==undefined)?attr.outsideIfNot.replace(', ',',').split(','):[],fn;if(attr.id!==undefined){classList.push(attr.id);}
+function eventHandler(e){if(angular.element(elem).hasClass("ng-hide")){return;}
+var i=0,element;if(!e||!e.target){return;}
+for(element=e.target;element;element=element.parentNode){var id=element.id,classNames=element.className,l=classList.length;if(classNames&&classNames.baseVal!==undefined){classNames=classNames.baseVal;}
+for(i=0;i<l;i++){if((id!==undefined&&id===classList[i])||(classNames&&classNames===classList[i])){return;}}}
+$scope.$apply(function(){fn=$parse(attr['clickOutside']);fn($scope);});}
+if(_hasTouch()){$document.on('touchstart',eventHandler);}
+$document.on('click',eventHandler);$scope.$on('$destroy',function(){if(_hasTouch()){$document.off('touchstart',eventHandler);}
+$document.off('click',eventHandler);});function _hasTouch(){return'ontouchstart'in window||navigator.maxTouchPoints;};});}};}})();
