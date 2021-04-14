@@ -166,7 +166,10 @@ Heading-Bar {
     padding-right: 250px;
     position:center;
 }
-
+.collection_vid{
+    display: flex;
+    flex-direction: row;
+}
 .ed {
     display: inline-grid;
     grid-template-columns: 200px auto;
@@ -216,7 +219,7 @@ Heading-Bar {
     padding-block: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: opacity 0.5s;
 }
 .Welcome-Content-wrapper:hover{
