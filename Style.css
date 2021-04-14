@@ -20,8 +20,8 @@
 }
 .NavBar-wrapper {
     margin-block: auto;
-    margin-right: 30px;
-    padding: 10px;
+    margin-right: 3vw;
+    padding: 1vw;
     text-transform: capitalize;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
