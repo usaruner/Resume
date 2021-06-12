@@ -157,7 +157,7 @@ Heading-Bar {
     display: inline-grid;
     background-color: rgb(228 228 228 / 0.48);
     padding-inline: 25px;
-    width: 1000px;
+    width: 80%;
     padding-inline:100px;
     padding-block: 100px;
     margin-left: auto;
