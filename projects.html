@@ -15,7 +15,7 @@
     <div class="Group">
         <div class="NavBar">
             <div class="left">
-                <div class="NavBar-wrapper" style="margin-right: 50px; font-size:3vw;">
+                <div class="NavBar-wrapper" style="margin-right: 5vw; font-size:2vw;">
                     <a href="website.html"> Henry Feng </a>
                 </div>
 
@@ -50,15 +50,16 @@
         <div class="project-wrapper">
 
             <div class="projects-group">
-                <div class="heading" style="font-size:50px">
+                <div class="Bheading">
                     EMBEDDING SYSTEMS
                 </div>
+
                 <div class="project">
                     <div class="heading">
                         Blinking LED
                     </div>
-                    <video width="500" height="300" controls>
-                        <source src="Media/light.mp4" type="video/mp4">
+                    <video class="vids" controls>
+                        <source src="Media/light.mp4" type="video/mp4" >
                     </video>
                     <div class="heading">
                         Description
@@ -71,8 +72,8 @@
                     <div class="heading">
                         CLOCK
                     </div>
-                    <video width="500" height="300" controls>
-                        <source src="Media/clock.mp4" type="video/mp4">
+                    <video class="vids">
+                        <source src="Media/clock.mp4" type="video/mp4" >
                     </video>
                     <div class="heading">
                         Description
@@ -85,8 +86,8 @@
                     <div class="heading">
                         MUSIC BOX
                     </div>
-                    <video width="500" height="300" controls>
-                        <source src="Media/musicbox.mp4" type="video/mp4">
+                    <video class="vids">
+                        <source src="Media/musicbox.mp4" type="video/mp4" >
                     </video>
                     <div class="heading">
                         Description
@@ -97,10 +98,10 @@
                 </div>
                 <div class="project">
                     <div class="heading">
-                        VOTLMETER
+                        VOLTMETER
                     </div>
-                    <video width="500" height="300" controls>
-                        <source src="Media/voltmeter.mp4" type="video/mp4">
+                    <video class="vids">
+                        <source src="Media/voltmeter.mp4" type="video/mp4" >
                     </video>
                     <div class="heading">
                         Description
@@ -113,8 +114,8 @@
                     <div class="heading">
                         LOCK
                     </div>
-                    <video width="500" height="300" controls>
-                        <source src="Media/lock.mp4" type="video/mp4">
+                    <video class="vids" controls>
+                        <source src="Media/lock.mp4" type="video/mp4" >
                     </video>
                     <div class="heading">
                         Description
@@ -125,17 +126,58 @@
                 </div>
             </div>
             <div class="projects-group">
-                <div class="heading" style="font-size:50px">
+                <div class="Bheading">
                     Java
                 </div>
             </div>
             <div class="projects-group">
-                <div class="heading" style="font-size:50px">
+                <div class="Bheading">
                     VHDL
                 </div>
+                <div class="project">
+                    <div class="heading">
+                        Single Cycle Processor
+                    </div>
+                    <div class="collection_vid">
+                        <img src="images/VHDL/AnoSingleCycleProcessor.jpg" alt="" class="FlexPic" />
+                        <img src="images/VHDL/SingleCycleProcessor.jpg" alt="" class="FlexPic" />
+                    </div>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Single cycle processor that can run simple mips commands. The processor is implemented by 6 parts: Pc counter/instruction Memory, Registers,
+                        ALU, Data Memory, and control module. The pc counter/ Instuction Memory simply stores memory and keeps track of the current instruction.
+                        The registers are the mips registers, simply an array of registers. The ALU implements the basic functions, such as load, store, add etc.
+                        The Data memory is the final memory stored used when user Loads. The control module manages different Instruction types, I type, R type, J type.
+                        The control module required a Karnaugh map to provide efficent parsing of the instruction type.
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="heading">
+                        Pipeline Processor
+                    </div>
+                    <div class="collection_vid">
+                        <img src="images/VHDL/AnotPipProcessor_Pt1.jpg" alt="" class="FlexPic" />
+                        <img src="images/VHDL/AnotPipProcessor_Pt2.jpg" alt="" class="FlexPic" />
+                        <img src="images/VHDL/SingleCycleProcessor.JPG" alt="" class="FlexPic" />
+
+                    </div>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Piped cycle processor that can run simple mips commands. The processor is implemented by 7 parts plus inbetween registers: Pc counter/instruction Memory, Registers,
+                        ALU, Data Memory, control module, and Hazard handler. The processor uses the same logic as the single cycle processor, but provides a register in between
+                        stages to allow for pipeline. The pipline saves registers need and provides them for the next instruction. This cuts the processing time to the longest path each pipe.
+                        The main issues that arises is the hazards that is created by the pipeline, hence the need for a hazard handler module. The hazard check the next instruction and compares
+                        the instruction in the memory stage to see if it causes a hazard. The hazard will produce a NOP if hazard is detected.
+                    </div>
+                </div>
             </div>
+
             <div class="projects-group">
-                <div class="heading" style="font-size:50px">
+                <div class="Bheading">
                     Python
                 </div>
 
@@ -143,25 +185,25 @@
                     <div class="heading">
                         Running_AI
                     </div>
-                        <div class="collection_vid">
-                            <iframe allow="fullscreen;" width="400" height="230" src="https://www.youtube.com/embed/KVb5StO06Vs">
-                            </iframe>
+                    <div class="collection_vid">
+                        <iframe allow="fullscreen;" class="Yvids" src="https://www.youtube.com/embed/KVb5StO06Vs">
+                        </iframe>
 
-                            <iframe  allow="fullscreen;" width="400" height="230"  src="https://www.youtube.com/embed/PK_X0rSxxoE">
-                            </iframe>
+                        <iframe allow="fullscreen;" class="Yvids" src="https://www.youtube.com/embed/PK_X0rSxxoE">
+                        </iframe>
 
-                            <iframe  allow="fullscreen;" width="400" height="230"  src="https://www.youtube.com/embed/M-E4wpLPGic">
-                            </iframe>
-                        </div>
+                        <iframe allow="fullscreen;" class="Yvids" src="https://www.youtube.com/embed/M-E4wpLPGic">
+                        </iframe>
+                    </div>
                     <div class="heading">
                         Description
                     </div>
                     <div class="text">
-                        Based on the snake controls a game object/ player can only go left or right. They are constantly going forward and the object's goal<br>
-                        is to collect fruits. The player is just a white dot and the fruits are red dots. The AI uses MLAgents on Unity to run tests and MLAgents<br>
-                        uses Tensorflow to control the AI. I trained the AI using a exponent fruit reward system, but also implemented a punishment when it hits<br>
-                        the wall. I went through more than 10hrs or seprate training for the AI, varying the hidden nodes and expanding the learning rate. <br>
-                        The best Average score I gotten was about 80 which is around only 8 berries collected within 5000 steps. The score was average, but<br>
+                        Based on the snake controls a game object/ player can only go left or right. They are constantly going forward and the object's goal
+                        is to collect fruits. The player is just a white dot and the fruits are red dots. The AI uses MLAgents on Unity to run tests and MLAgents
+                        uses Tensorflow to control the AI. I trained the AI using a exponent fruit reward system, but also implemented a punishment when it hits
+                        the wall. I went through more than 10hrs or seprate training for the AI, varying the hidden nodes and expanding the learning rate. 
+                        The best Average score I gotten was about 80 which is around only 8 berries collected within 5000 steps. The score was average, but
                         wasn't what I was expecting. The training took 1hr and around 3,000,000 trials.
 
                     </div>

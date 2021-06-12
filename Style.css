@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-block: 5px;
+    padding-block: 10px;
     margin-block: auto;
 }
 
@@ -28,28 +28,27 @@
 .NavBar-wrapper {
     margin-block: auto;
     margin-right: 3vw;
-    padding: 1vw;
     text-transform: capitalize;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
-    font-size: 2vw;
+    font-size: 25px;
 }
 Heading-Bar {
-    margin-right: 75px; 
-    font-size: 3vw;
+    margin-right: 7vw;
+    font-size: 25px;
 }
 .NavBar-wrapper a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.5s;
-    margin: 5px;
+    margin: 1vw;
 }
 .right {
     display: flex;
 }
 
 .NavBar-wrapper:hover{
-    border-bottom: 1px solid black;
+    border-bottom: 0.2vw solid black;
 }
 
 .NavBar-wrapper a:hover {
@@ -96,11 +95,12 @@ Heading-Bar {
     grid-row-start: 2;
     grid-row-end: 2;
 }
+
 .profile-intro-text {
     border-top: 1px solid;
     border-color: #e7e9eb;
     padding: 25px;
-    font-size: 2vw;
+    font-size: 25px;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -130,62 +130,76 @@ Heading-Bar {
     border-color: #e7e9eb;
     box-shadow: 2px;
 }
+
 .info-text {
     padding: 25px;
-    font-size: 2vw;
+    font-size: 25px;
     margin-block: 50px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
+    grid-gap: 1vw;
     word-wrap: break-word;
 }
 
 
+
 .project-wrapper {
-    min-width: 1460px;
-    display: grid;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: rgb(228 228 228 / 0.48);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
 }
 .projects-group {
-    min-width: 1130px;
     position: relative;
     display: inline-grid;
-    margin: 100px;
-    border: 2px solid;
-    border-color: #e7e9eb;
-    background-color: rgb(201 235 241 / 0.22);
-    box-shadow: 2px;
-    padding-right: 250px;
+    background-color: rgb(228 228 228 / 0.48);
+    padding-inline: 25px;
+    width: 1000px;
+    padding-inline:100px;
+    padding-block: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px
 }
 .project {
-    min-width: 1000px;
-    position: relative;
-    display: inline-grid;
-    padding-inline: 100px;
-    padding-block: 50px;
-    border-bottom: 2px solid;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid;
     border-color: #e7e9eb;
-    box-shadow: 2px;
-    padding-right: 250px;
-    position:center;
+    box-shadow: 2vw;
+    position: center;
+    padding-inline: 50px;
+    padding-block: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
-.collection_vid{
+.FlexPic {
+    max-width: 500px;
+    max-height: 500px;
+    flex-basis: auto;
+    padding-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.collection_vid {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .ed {
     display: inline-grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 20vw auto;
     min-width: 1000px;
-    padding-inline: 100px;
-    padding-block: 50px;
-    border-bottom: 2px solid;
+    padding-inline: 10vw;
+    padding-block: 5vw;
+    border-bottom: 2vw solid;
     border-color: #e7e9eb;
-    box-shadow: 2px;
-    padding-right: 250px;
+    box-shadow: 2vw;
+    padding-right: 25vw;
     position: center;
 }
 .ED-wrapper {
@@ -203,9 +217,9 @@ Heading-Bar {
     background-position: center;
     background-repeat: no-repeat;
     padding-inline: 0px;
-    padding-block: 200px;
+    padding-block: 20vw;
     opacity: 85%;
-    font-size: 5vw;
+    font-size: 50px;
     color: white;
     text-align: center;
 }
@@ -222,7 +236,7 @@ Heading-Bar {
 }
 .Welcome-Content-wrapper {
     position: relative;
-    padding-block: 200px;
+    padding-block: 20vw;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -241,16 +255,34 @@ Heading-Bar {
     height: 100%;
     color: black;
     transition: color 0.5s;
-    font-size: 2vw;
+    font-size: 25px;
     opacity: 1;
+    min-inline-size:200px
 }
 .img_text:hover{
     color: white;
 }
-    .headings {
-    padding-left: 25px;
+.Bheading {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 2px solid;
+    border-color: #e7e9eb;
+}
+.heading {
+    text-align: center;
+    font-size: 25px;
 }
 .text {
-    margin-inline: 50px;
-    font-size: 2vw;
+    text-align: center;
+    font-size: 15px;
+}
+.vids {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Yvids {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
