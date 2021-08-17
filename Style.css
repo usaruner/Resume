@@ -79,8 +79,8 @@ Heading-Bar {
 @media all and (max-width: 806px) {
     .Welcome-Contents {
         grid-template-columns: minmax(0, 1fr);
-        
-    }
+        grid-template-rows: 50vh 50vh 50vh;
+    }   
 }
 
 
@@ -280,7 +280,7 @@ Heading-Bar {
     height: 100%;
     color: black;
     transition: color 0.5s;
-    font-size: 2.5vw;
+    font-size: 5vh;
     opacity: 1;
     min-inline-size: 20vw;
 }
