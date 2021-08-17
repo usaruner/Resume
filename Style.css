@@ -61,7 +61,7 @@ Heading-Bar {
     color: black;
 }
 
-@media screen and (min-width: 500px) {
+@media all and (max-width: 1000px) {
     .NavBar, .Group {
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
         min-width: 100%;
@@ -76,7 +76,7 @@ Heading-Bar {
     }
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 806px) {
     .Welcome-Contents {
         grid-template-columns: minmax(0, 1fr);
     }
