@@ -2,6 +2,7 @@
     margin: 0px;
     overflow-x: hidden;
 }
+
 .Icon {
     display: flex;
     margin-left: auto;
@@ -10,7 +11,7 @@
     text-align: center;
     align-items: center;
     max-width: 10vw; 
-    max-height: 10vh; 
+    max-height: 10vw; 
     padding-block: 20px;
 }
 .Group {
@@ -60,13 +61,24 @@ Heading-Bar {
     color: black;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 500px) {
     .NavBar, .Group {
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
         min-width: 100%;
     }
+
     .Category {
         font-size: 10vh;
+    }
+
+    .Welcome-Contents {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+
+@media all and (max-width: 700px) {
+    .Welcome-Contents {
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 
@@ -241,7 +253,7 @@ Heading-Bar {
 .Welcome-Contents {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+
     text-align: center;
     margin-left: auto;
     margin-right: auto;
