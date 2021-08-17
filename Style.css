@@ -171,8 +171,8 @@ Heading-Bar {
     background-color: rgb(228 228 228 / 0.48);
     padding-inline: 25px;
     width: 70%;
-    padding-inline:100px;
-    padding-block: 100px;
+    padding-inline:10vw;
+    padding-block: 10vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px
@@ -269,7 +269,7 @@ Heading-Bar {
     transition: color 0.5s;
     font-size: 2.5vw;
     opacity: 1;
-    min-inline-size:200px
+    min-inline-size: 20vw;
 }
 .img_text:hover{
     color: white;
