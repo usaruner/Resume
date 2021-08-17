@@ -62,15 +62,7 @@ Heading-Bar {
 }
 
 @media all and (min-width: 1000px) {
-    .NavBar, .Group {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-        min-width: 100%;
-    }
-
-    .Category {
-        font-size: 10vh;
-    }
-
+    
     .Welcome-Contents {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     }
@@ -80,7 +72,16 @@ Heading-Bar {
     .Welcome-Contents {
         grid-template-columns: minmax(0, 1fr);
         grid-template-rows: 40vh 40vh 40vh;
-    }   
+    }
+    .NavBar, .Group {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        min-width: 100%;
+    }
+
+    .Category {
+        font-size: 10vh;
+    }
+
 }
 
 
