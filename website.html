@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Henry Feng</title>
     <div class="Icon-space">
-        <img src="images/icon.png" alt="" class="Icon"  />
+        <img src="images/icon.png" alt="" class="Icon" />
 
     </div>
     <link rel="stylesheet" href="Style.css">
+    <script>
+        function reportWindowSize() {
+
+            if (window.innerWidth; < 800) {
+                console.log(window.innerWidth);
+            }
+        }
+        window.addEventListener('resize', reportWindowSize);
+
+    </script>
 </head>
 <body>
 
     <div class="Group">
         <div class="NavBar">
-            <div class="left">
+            <div class="left" id="task">
                 <div class="NavBar-wrapper" style="margin-right: 1vh; font-size:3vh;">
                     <a href="website.html"> Henry Feng </a>
                 </div>
