@@ -15,28 +15,26 @@
     padding-block: 20px;
 }
 .Group {
+    display: block;
+    list-style-type: none;
     background-color: #a0a0a0;
-    min-width: 1460px;
-}
-.NavBar {
-
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-block: 10px;
-    margin-block: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: auto;
 }
 
-.left{
-    display: flex;
-}
+
 .NavBar-wrapper {
+    float: left;
     margin-block: auto;
     margin-right: 3px;
     text-transform: capitalize;
+    padding: 1.7vh 16px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
     font-size: 2.5vh;
+    display: block;
 }
 Heading-Bar {
     margin-right: 7vw;
@@ -46,7 +44,6 @@ Heading-Bar {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.5s;
-    margin: 1vw;
 }
 .right {
     display: flex;
@@ -54,30 +51,61 @@ Heading-Bar {
 }
 
 .NavBar-wrapper:hover{
-    border-bottom: 0.2vw solid black;
+    border-bottom: 1px solid black;
+
 }
 
 .NavBar-wrapper a:hover {
     color: black;
 }
-
+.openbtn {
+    float: left;
+    font-size: 2.5vh;
+    cursor: pointer;
+    background-color: #a0a0a0;
+    color: white;
+    padding: 1.55vh 16px;
+    border: none;
+}
+@media all and (min-width: 807px) {
+    .openbtn {
+        pointer-events: none;
+    }
+}
 @media all and (min-width: 1000px) {
-    
+
     .Welcome-Contents {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     }
 }
 
 @media all and (max-width: 806px) {
+    .NavBar-wrapper:hover {
+        border-bottom: none;
+    }
     .Welcome-Contents {
         grid-template-columns: minmax(0, 1fr);
         grid-template-rows: 40vh 40vh 40vh;
     }
-    .NavBar, .Group {
-        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-        min-width: 100%;
+    .Group {
+        background-color: #a0a0a0;
+        width: 100%;
+        height: 0px;
+        text-align: center;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
     }
-
+    .openbtn {
+        width: 100%;
+        text-align: left;
+        pointer-events: all;
+    }
+    .NavBar-wrapper {
+        float: none;
+        text-align: justify;
+    }
     .Category {
         font-size: 10vh;
     }
@@ -205,8 +233,8 @@ Heading-Bar {
     width: 80%;
 }
 .FlexPic {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 50vw;
+    max-height: 50vh;
     flex-basis: auto;
     padding-bottom: 2vw;
     margin-left: auto;
@@ -232,6 +260,7 @@ Heading-Bar {
     width:100%
 }
 .WelcomeBox {
+    margin-top:0;
     display: flex;
     flex-direction: column;
     width: 100%;

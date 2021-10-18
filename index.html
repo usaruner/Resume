@@ -5,70 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Henry Feng</title>
     <div class="Icon-space">
-        <img src="images/icon.png" alt="" class="Icon"  />
-
+        <img src="images/icon.png" alt="" class="Icon" />
     </div>
     <link rel="stylesheet" href="Style.css">
+    <script>
+        function reportWindowSize() {
+            if (window.innerWidth > 800) {
+                document.getElementById("mySidepanel").style.height = document.getElementById("nav").style.height;
+            } else {
+                document.getElementById("mySidepanel").style.height = "0px";
+            }
+        }
+        window.addEventListener('resize', reportWindowSize);
+        function openNav() {
+            console.log(document.getElementById("mySidepanel").style.height == "70%")
+            if (document.getElementById("mySidepanel").style.height > "0px") {
+                document.getElementById("mySidepanel").style.height = "0px";
+            }
+            else {
+                document.getElementById("mySidepanel").style.height = "25vh";
+            }
+
+        }
+
+    </script>
 </head>
-    <body>
-
-        <div class="Group">
-            <div class="NavBar">
-                <div class="left">
-                    <div class="NavBar-wrapper" style="margin-right: 1vh; font-size:3vh;">
-                        <div> Henry Feng </div>
-                    </div>
-
-                    <div class="NavBar-wrapper">
-                        <a href="website.html"> HOME </a>
-                    </div>
-
-                    <div class="NavBar-wrapper">
-                        <a href="projects.html"> PROJECTS</a>
-                    </div>
-
-                    <div class="NavBar-wrapper">
-                        <a href="education.html"> EDUCATION</a>
-                    </div>
-
-                    <div class="NavBar-wrapper">
-                        <a href="about.html"> ABOUT</a>
-                    </div>
-                </div>
-
-                <div class="right">
-                    <div style="margin-block:auto; margin-right:5px;">
-                        <div>HF</div>
-                    </div>
-                </div>
-
-            </div>
+<body>
+    <div style="display:block;" id="nav">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <div>
+            <ul class="Group" id="mySidepanel">
+                <li class="NavBar-wrapper"><a href="website.html"> HOME </a></li>
+                <li class="NavBar-wrapper"><a href="projects.html"> PROJECTS</a></li>
+                <li class="NavBar-wrapper"><a href="education.html"> EDUCATION</a></li>
+                <li class="NavBar-wrapper"><a href="about.html"> ABOUT</a></li>
+            </ul>
         </div>
-
-        <div class="WelcomeBox">
-            <div class="WelcomePhoto" style="background-image:url(images/Prolong_Welcome.png)">
-                WELCOME
-            </div>
-            <div class="Welcome-Contents">
-                <a class="Welcome-Content-wrapper" style="background-image: url(images/Projects.jpg)" href="projects.html">
-                    <div class="img_text"> PROJECTS</div>
-                </a>
-                <a class="Welcome-Content-wrapper" style="background-image:url(images/UCI.png)" href="education.html">
-                    <div class="img_text"> EDUCATION</div>
-                </a>
-                <a class="Welcome-Content-wrapper" style="background-image:url(images/About.png)" href="about.html">
-                    <div class="img_text"> ABOUT</div>
-                </a>
-            </div>
-            <div style="text-align: center; width:100%; border:1px solid black">
-                This a both an experiment and learning experience for me on HTML and css.
-                please feel free email me any comments.
-                <br>Linkedin:    <a href="https://www.linkedin.com/in/henry-feng-604449152/">https://www.linkedin.com/in/henry-feng-604449152/</a>
-                <br>Github:     <a href="https://github.com/usaruner">https://github.com/usaruner</a>
-                <br>FB:         <a href="https://www.facebook.com/henry.feng.7/">https://www.facebook.com/henry.feng.7/</a>
-                <br>Gmail:      henryfeng500 at gmail dot com
-            </div>
+    </div>
+    <div class="WelcomeBox">
+        <div class="WelcomePhoto" style="background-image:url(images/Prolong_Welcome.png)">
+            WELCOME
         </div>
-    </body>
+        <div class="Welcome-Contents">
+            <a class="Welcome-Content-wrapper" style="background-image: url(images/Projects.jpg)" href="projects.html">
+                <div class="img_text"> PROJECTS</div>
+            </a>
+            <a class="Welcome-Content-wrapper" style="background-image:url(images/UCI.png)" href="education.html">
+                <div class="img_text"> EDUCATION</div>
+            </a>
+            <a class="Welcome-Content-wrapper" style="background-image:url(images/About.png)" href="about.html">
+                <div class="img_text"> ABOUT</div>
+            </a>
+        </div>
+        <div style="text-align: center; width:100%; border:1px solid black">
+            This a both an experiment and learning experience for me on HTML and css.
+            please feel free email me any comments.
+            <br>Linkedin:    <a href="https://www.linkedin.com/in/henry-feng-604449152/">https://www.linkedin.com/in/henry-feng-604449152/</a>
+            <br>Github:     <a href="https://github.com/usaruner">https://github.com/usaruner</a>
+            <br>FB:         <a href="https://www.facebook.com/henry.feng.7/">https://www.facebook.com/henry.feng.7/</a>
+            <br>Gmail:      henryfeng500 at gmail dot com
+        </div>
+    </div>
+</body>
 
 </html>

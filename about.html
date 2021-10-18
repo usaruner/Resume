@@ -1,90 +1,89 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-        <title>Henry Feng</title>
-        <div class="Icon-space">
-            <img src="images/icon.png" alt="" class="Icon"  />
-        </div>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-    <body>
-        <div class="Group" [clr-nav-level]="1">
-            <div class="NavBar">
-                <div class="left">
-                    <div class="NavBar-wrapper" style="margin-right: 1vh; font-size:3vh;">
-                        <a href="website.html"> Henry Feng </a>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Henry Feng</title>
+    <div class="Icon-space">
+        <img src="images/icon.png" alt="" class="Icon" />
+    </div>
+    <link rel="stylesheet" href="Style.css">
+    <script>
+        function reportWindowSize() {
+            if (window.innerWidth > 800) {
+                document.getElementById("mySidepanel").style.height = document.getElementById("nav").style.height;
+            } else {
+                document.getElementById("mySidepanel").style.height = "0px";
+            }
+        }
+        window.addEventListener('resize', reportWindowSize);
+        function openNav() {
+            console.log(document.getElementById("mySidepanel").style.height == "70%")
+            if (document.getElementById("mySidepanel").style.height > "0px") {
+                document.getElementById("mySidepanel").style.height = "0px";
+            }
+            else {
+                document.getElementById("mySidepanel").style.height = "25vh";
+            }
 
-                    <div class="NavBar-wrapper">
-                        <a href="website.html"> HOME </a>
-                    </div>
+        }
 
-                    <div class="NavBar-wrapper">
-                        <a href="projects.html"> PROJECTS</a>
-                    </div>
-
-                    <div class="NavBar-wrapper">
-                        <a href="education.html"> EDUCATION</a>
-                    </div>
-
-                    <div class="NavBar-wrapper">
-                        <a href="about.html"> ABOUT</a>
-                    </div>
-                </div>
-
-                <div class="right">
-                    <div style="margin-block:auto;">
-                        <div>HF</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+    </script>
+</head>
+<body>
+    <div style="display:block;" id="nav">
+        <button class="openbtn" onclick="openNav()">☰</button>
         <div>
+            <ul class="Group" id="mySidepanel">
+                <li class="NavBar-wrapper"><a href="website.html"> HOME </a></li>
+                <li class="NavBar-wrapper"><a href="projects.html"> PROJECTS</a></li>
+                <li class="NavBar-wrapper"><a href="education.html"> EDUCATION</a></li>
+                <li class="NavBar-wrapper"><a href="about.html"> ABOUT</a></li>
+            </ul>
+        </div>
+    </div>
 
-            <div class="Profile">
-                <div class="Category">INTRODUCTION</div>
-                <div class="profile-intro-pic">
-                    <img src="images/profile.jpg" style="max-height: 30vw; max-width: auto; padding-bottom: 2vh;">
-                </div>
-                <div class="profile-intro-info">
-                    <h1 class="headings"></h1>
-                    <div class="info-text" style="line-height: 3vw;">
-                        AGE:     21<br>
-                        GENDER:    Male<br>
-                        ENTHNICITY:     Chinese<br>
-
-                    </div>
-                    <h1 class="headings"></h1>
-                    <div class="info-text" style="line-height: 3vw;">
-                        EMAIL:     henryfeng500 at gmail dot com<br>
-                        PHONE:     (415)589-9690<br>
-
-                    </div>
-                </div>
-                <div class="profile-intro-text">
-                    <div class="info-text" >
-                        Hello, my name is Henry Feng. I am from San Francisco, California and currently a Computer Science and Engineering Major student from UCI.
-                        Some languages I am proficent in are Java, Python, HTML, VHDL, MIPS, C, and C++. I have studied Data Structure, AI Design, Networks Protcols,
-                        Networks Secruity, OS Design, CPU Design, Compilers languages, Electrical Circuits, Mosfets Transitors, Embedded Systems, and Digital Signal Processing.
-                        I am most interested in Embedded Systems, OS Design, and Machine Learning. I was in the Coder's Club at my comunity college and I am in the video game
-                        design club at UCI.
-                    </div>
-                </div>
-
-
+    <div class="Profile">
+        <div class="Category">INTRODUCTION</div>
+        <div class="profile-intro-pic">
+            <img src="images/profile.jpg" style="max-height: 30vw; max-width: auto; padding-bottom: 2vh;">
+        </div>
+        <div class="profile-intro-info">
+            <h1 class="headings"></h1>
+            <div class="info-text" style="line-height: 3vw;">
+                AGE:     21<br>
+                GENDER:    Male<br>
+                ENTHNICITY:     Chinese<br>
 
             </div>
-            <div class="info">
-                <div class="Category">HOBBIES</div>
-                    <div class="info-text" >
-                        A little bit about my interests out of work. I swim and I was a lifeguard throughout most of college. I like to workout and be outside most of the time.
-                        I used to play a lot of games like League, Overwatch, Siege ... etc. I enjoy watching Tv shows as well. I go through kdramas, animes, mysteries and more.
-                        I am huge Marvel and DC(If you asked me I still like DC more). I am not too extraverted, I am terribly shy with social media and text(hence probably empty
-                        social media pages). I still enjoy talking to people and learning about other's.
-                    </div>
+            <h1 class="headings"></h1>
+            <div class="info-text" style="line-height: 3vw;">
+                EMAIL:     henryfeng500 at gmail dot com<br>
+                PHONE:     (415)589-9690<br>
+
             </div>
-    </body>
+        </div>
+        <div class="profile-intro-text">
+            <div class="info-text">
+                Hello, my name is Henry Feng. I am from San Francisco, California and currently a Computer Science and Engineering Major student from UCI.
+                Some languages I am proficent in are Java, Python, HTML, VHDL, MIPS, C, and C++. I have studied Data Structure, AI Design, Networks Protcols,
+                Networks Secruity, OS Design, CPU Design, Compilers languages, Electrical Circuits, Mosfets Transitors, Embedded Systems, and Digital Signal Processing.
+                I am most interested in Embedded Systems, OS Design, and Machine Learning. I was in the Coder's Club at my comunity college and I am in the video game
+                design club at UCI.
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="info">
+        <div class="Category">HOBBIES</div>
+        <div class="info-text">
+            A little bit about my interests out of work. I swim and I was a lifeguard throughout most of college. I like to workout and be outside most of the time.
+            I used to play a lot of games like League, Overwatch, Siege ... etc. I enjoy watching Tv shows as well. I go through kdramas, animes, mysteries and more.
+            I am huge Marvel and DC(If you asked me I still like DC more). I am not too extraverted, I am terribly shy with social media and text(hence probably empty
+            social media pages). I still enjoy talking to people and learning about other's.
+        </div>
+    </div>
+</body>
 </html>

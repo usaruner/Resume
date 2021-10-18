@@ -5,47 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Henry Feng</title>
     <div class="Icon-space">
-        <img src="images/icon.png" alt="" class="Icon"  />
-
+        <img src="images/icon.png" alt="" class="Icon" />
     </div>
     <link rel="stylesheet" href="Style.css">
+    <script>
+        function reportWindowSize() {
+            if (window.innerWidth > 800) {
+                document.getElementById("mySidepanel").style.height = document.getElementById("nav").style.height;
+            } else {
+                document.getElementById("mySidepanel").style.height = "0px";
+            }
+        }
+        window.addEventListener('resize', reportWindowSize);
+        function openNav() {
+            console.log(document.getElementById("mySidepanel").style.height == "70%")
+            if (document.getElementById("mySidepanel").style.height > "0px") {
+                document.getElementById("mySidepanel").style.height = "0px";
+            }
+            else {
+                document.getElementById("mySidepanel").style.height = "25vh";
+            }
+
+        }
+
+    </script>
 </head>
 <body>
-
-    <div class="Group">
-        <div class="NavBar">
-            <div class="left">
-                <div class="NavBar-wrapper" style="margin-right: 1vh; font-size:3vh;">
-                    <a href="website.html"> Henry Feng </a>
-                </div>
-
-                <div class="NavBar-wrapper">
-                    <a href="website.html"> HOME </a>
-                </div>
-
-                <div class="NavBar-wrapper">
-                    <a href="projects.html"> PROJECTS</a>
-                </div>
-
-                <div class="NavBar-wrapper">
-                    <a href="education.html"> EDUCATION</a>
-                </div>
-
-                <div class="NavBar-wrapper">
-                    <a href="about.html"> ABOUT</a>
-                </div>
-            </div>
-
-            <div class="right">
-                <div style="margin-block:auto">
-                    <div>HF</div>
-                </div>
-            </div>
-
+    <div style="display:block;" id="nav">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <div>
+            <ul class="Group" id="mySidepanel">
+                <li class="NavBar-wrapper"><a href="website.html"> HOME </a></li>
+                <li class="NavBar-wrapper"><a href="projects.html"> PROJECTS</a></li>
+                <li class="NavBar-wrapper"><a href="education.html"> EDUCATION</a></li>
+                <li class="NavBar-wrapper"><a href="about.html"> ABOUT</a></li>
+            </ul>
         </div>
     </div>
-
-    <div>
         <div class="ED-wrapper">
             <div class="ed">
                 <img src="images/lowell_logo.png" alt="" class="Icon" style="max-width: 100px; max-height: 100px; padding-bottom: 20px;" />
