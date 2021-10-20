@@ -68,51 +68,7 @@ Heading-Bar {
     padding: 1.55vh 16px;
     border: none;
 }
-@media all and (min-width: 807px) {
-    .openbtn {
-        pointer-events: none;
-    }
-}
-@media all and (min-width: 1000px) {
 
-    .Welcome-Contents {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    }
-}
-
-@media all and (max-width: 806px) {
-    .NavBar-wrapper:hover {
-        border-bottom: none;
-    }
-    .Welcome-Contents {
-        grid-template-columns: minmax(0, 1fr);
-        grid-template-rows: 40vh 40vh 40vh;
-    }
-    .Group {
-        background-color: #a0a0a0;
-        width: 100%;
-        height: 0px;
-        text-align: center;
-        z-index: 5;
-        display: flex;
-        flex-direction: column;
-        transition: 1s;
-    }
-    .openbtn {
-        width: 100%;
-        text-align: left;
-        pointer-events: all;
-        color: white;
-    }
-    .NavBar-wrapper {
-        float: none;
-        text-align: justify;
-    }
-    .Category {
-        font-size: 10vh;
-    }
-
-}
 
 
 .Profile {
@@ -207,7 +163,8 @@ Heading-Bar {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    width: 100%
+    width: 100%;
+    background-color: rgb(228 228 228 / 0.48);
 }
 .projects-group {
     position: relative;
@@ -215,7 +172,7 @@ Heading-Bar {
     background-color: rgb(228 228 228 / 0.48);
     padding-inline: 25px;
     width: 70%;
-    padding-inline:20vw;
+    padding-inline:15vw;
     padding-block: 5vw;
     margin-left: auto;
     margin-right: auto;
@@ -224,8 +181,6 @@ Heading-Bar {
 .project {
     display: flex;
     flex-direction: column;
-    border-bottom: 5px solid;
-    border-color: #e7e9eb;
     box-shadow: 2vw;
     position: center;
     padding-inline: 50px;
@@ -234,9 +189,16 @@ Heading-Bar {
     margin-right: auto;
     width: 80%;
 }
-.col{
-    overflow:hidden;
-    transition:1s;
+.col {
+    overflow: hidden;
+    transition: 1s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-inline: 3px solid;
+    border-bottom: 3px solid;
+    border-color: lightgray;
+    background: #dcdee1;
+    visibility: hidden;
 }
 .FlexPic {
     max-width: 50vw;
@@ -326,14 +288,14 @@ Heading-Bar {
 .Bheading {
     font-size: 4vh;
     border-color: #e7e9eb;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background: lightgray;
-    cursor:pointer;
+    cursor: pointer;
 }
 .Bheading:hover {
     background: #a0a0a0;
     transition: 0.5s;
-    border-bottom: 2px solid;
 }
 .heading {
     text-align: center;
@@ -353,4 +315,65 @@ Heading-Bar {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media all and (min-width: 807px) {
+    .openbtn {
+        pointer-events: none;
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+    .Welcome-Contents {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+
+@media all and (max-width: 806px) {
+    .NavBar-wrapper:hover {
+        border-bottom: none;
+    }
+
+    .Welcome-Contents {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: 40vh 40vh 40vh;
+    }
+
+    .Group {
+        background-color: #a0a0a0;
+        width: 100%;
+        height: 0px;
+        text-align: center;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+    }
+
+    .openbtn {
+        width: 100%;
+        text-align: left;
+        pointer-events: all;
+        color: white;
+    }
+
+    .NavBar-wrapper {
+        float: none;
+        text-align: justify;
+    }
+
+    .Category {
+        font-size: 6vh;
+    }
+
+    .collection_vid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .Yvids{
+        width:100%;
+    }
 }

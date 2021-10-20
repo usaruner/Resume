@@ -31,10 +31,13 @@
         }
         function changesym(ele) {
             h = ele.getElementsByTagName('a')[1];
+            b = document.getElementById(ele.getAttribute("href").substr(1, ele.getAttribute("href").length));
             if (h.innerHTML == "+") {
                 h.innerHTML = "-";
+                b.style.visibility = "visible";
             } else {
                 h.innerHTML = "+";
+                b.style.visibility = "hidden";
             }
         }
     </script>
@@ -46,7 +49,7 @@
         <div>
             <ul class="Group" id="mySidepanel">
                 <li class="NavBar-wrapper"><a href="website.html"> HOME </a></li>
-                <li class="NavBar-wrapper"><a href="projects.html"> PROJECTS</a></li>
+                <li class="NavBar-wrapper"><a href="projects.html" style="color:black"> PROJECTS</a></li>
                 <li class="NavBar-wrapper"><a href="education.html"> EDUCATION</a></li>
                 <li class="NavBar-wrapper"><a href="about.html"> ABOUT</a></li>
             </ul>
@@ -212,6 +215,22 @@
                         The algorithm works by pulling the networks median to around Erdos number to be around 5. Lastly, efficent functions to generate diameter, cluster coefficent
                         and degree was implemented.
 
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="heading">
+                        Bin Packing Algorithm
+                    </div>
+                    <div class="collection_vid">
+                        <img src="https://github.com/usaruner/Algorithms_Analysis/blob/main/Bin_Packing_Algorithms/Pictures/Results.JPG?raw=true" alt="" class="FlexPic" />
+                    </div>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Created a algorithms to effiecently pack in bins. These include greedy algorthims such as First fit and next fit. The algorithms were implemented efficently usng a zip tree. 
+                        The zip tree was able to handle best fit by store the biggest remaining value. This allowed the search of the best fit to run in O(log(N)) time. The efficency was calculated using 
+                        the average waste which is the possible space - filled space. We also considered sorting and then packing the bins. This allowed the fitting algorithms to perform exceptionally well. 
                     </div>
                 </div>
                 <div class="project">
