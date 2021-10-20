@@ -8,6 +8,8 @@
         <img src="images/icon.png" alt="" class="Icon" />
     </div>
     <link rel="stylesheet" href="Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
         function reportWindowSize() {
             if (window.innerWidth > 800) {
@@ -18,7 +20,7 @@
         }
         window.addEventListener('resize', reportWindowSize);
         function openNav() {
-            
+
             if (document.getElementById("mySidepanel").style.height > "0px") {
                 document.getElementById("mySidepanel").style.height = "0px";
             }
@@ -29,6 +31,7 @@
         }
 
     </script>
+
 </head>
 <body>
     <div style="display:block;" id="nav">
@@ -42,165 +45,188 @@
             </ul>
         </div>
     </div>
-    <div class="project-wrapper">
-
+    <div class="project-wrapper " >
         <div class="projects-group">
-            <div class="Bheading">
-                EMBEDDING SYSTEMS
+            <div data-toggle="collapse" href="#collapse1" class="Bheading">
+                <a >EMBEDDING SYSTEMS</a>
             </div>
-
-            <div class="project">
-                <div class="heading">
-                    Blinking LED
+            <div id="collapse1" class="panel-collapse collapse col" >
+                <div class="project">
+                    <div class="heading">
+                        Blinking LED
+                    </div>
+                    <iframe class="vids" src="https://www.youtube.com/embed/RN3WAon6CVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Testing for battery, the voltage regulator, the ATmega mircochip, and ICE programmer. I used a simple led blinker to insure that the components are working properly.
+                    </div>
                 </div>
-                <iframe class="vids" src="https://www.youtube.com/embed/RN3WAon6CVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="heading">
-                    Description
+                <div class="project">
+                    <div class="heading">
+                        CLOCK
+                    </div>
+                    <iframe class="vids" src="https://www.youtube.com/embed/FbWutDgLxUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Clock System running on a 8hz crystal. The device sets time using a keypad to set a work the clock. The clock can also switch between milltary to standard time.
+                    </div>
                 </div>
-                <div class="text">
-                    Testing for battery, the voltage regulator, the ATmega mircochip, and ICE programmer. I used a simple led blinker to insure that the components are working properly.
+                <div class="project">
+                    <div class="heading">
+                        MUSIC BOX
+                    </div>
+                    <iframe class="vids" src="https://www.youtube.com/embed/H_uEKs2usmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Music player running on a simple single speaker system. The Notes a fequencies of each note was manually configured into the device and a simple nursery songs were inputed to create a music box. The box can pause/play, select songs, and set tone/tempo.
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-                <div class="heading">
-                    CLOCK
+                <div class="project">
+                    <div class="heading">
+                        VOLTMETER
+                    </div>
+                    <iframe class="vids" src="https://www.youtube.com/embed/sMDwIPMHjAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        voltmeter that measures up to 5V.
+                    </div>
                 </div>
-                <iframe class="vids" src="https://www.youtube.com/embed/FbWutDgLxUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="heading">
-                    Description
-                </div>
-                <div class="text">
-                    Clock System running on a 8hz crystal. The device sets time using a keypad to set a work the clock. The clock can also switch between milltary to standard time.
-                </div>
-            </div>
-            <div class="project">
-                <div class="heading">
-                    MUSIC BOX
-                </div>
-                <iframe class="vids" src="https://www.youtube.com/embed/H_uEKs2usmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="heading">
-                    Description
-                </div>
-                <div class="text">
-                    Music player running on a simple single speaker system. The Notes a fequencies of each note was manually configured into the device and a simple nursery songs were inputed to create a music box. The box can pause/play, select songs, and set tone/tempo.
-                </div>
-            </div>
-            <div class="project">
-                <div class="heading">
-                    VOLTMETER
-                </div>
-                <iframe class="vids" src="https://www.youtube.com/embed/sMDwIPMHjAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="heading">
-                    Description
-                </div>
-                <div class="text">
-                    voltmeter that measures up to 5V.
-                </div>
-            </div>
-            <div class="project">
-                <div class="heading">
-                    LOCK
-                </div>
-                <iframe class="vids" src="https://www.youtube.com/embed/FWoMrjMIs3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="heading">
-                    Description
-                </div>
-                <div class="text">
-                    A lock system that managers accounts.
+                <div class="project">
+                    <div class="heading">
+                        LOCK
+                    </div>
+                    <iframe class="vids" src="https://www.youtube.com/embed/FWoMrjMIs3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        A lock system that managers accounts.
+                    </div>
                 </div>
             </div>
         </div>
         <div class="projects-group">
-            <div class="Bheading">
+            <div data-toggle="collapse" href="#collapse2" class="Bheading">
                 Java
             </div>
-            <div class="project">
-                <div class="heading">
-                    Mini OS
-                </div>
-                <iframe class="vids" src="https://www.youtube.com/embed/IQgDUdUTHMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="heading">
-                    Description
-                </div>
-                <div class="text">
-                    This is a siumlated operating system. The resources include Printers, Writers/Readers, Disks, Managers, and the Users. The program will use threads to represent each running resource. Users will be represented by a list of instructions. The program runs in parallel with hazard handling so that processes do not overwrite one another.
+            <div id="collapse2" class="panel-collapse collapse col">
+                <div class="project">
+                    <div class="heading">
+                        Mini OS
+                    </div>
+                    <iframe class="vids" src="https://www.youtube.com/embed/IQgDUdUTHMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        This is a siumlated operating system. The resources include Printers, Writers/Readers, Disks, Managers, and the Users. The program will use threads to represent each running resource. Users will be represented by a list of instructions. The program runs in parallel with hazard handling so that processes do not overwrite one another.
+                    </div>
                 </div>
             </div>
         </div>
         <div class="projects-group">
-            <div class="Bheading">
+            <div data-toggle="collapse" href="#collapse3" class="Bheading">
                 VHDL
             </div>
-            <div class="project">
-                <div class="heading">
-                    Single Cycle Processor
+            <div id="collapse3" class="panel-collapse collapse col">
+                <div class="project">
+                    <div class="heading">
+                        Single Cycle Processor
+                    </div>
+                    <div class="collection_vid">
+                        <img src="images/VHDL/AnoSingleCycleProcessor.jpg" alt="" class="FlexPic" />
+                        <img src="images/VHDL/SingleCycleProcessor.jpg" alt="" class="FlexPic" />
+                    </div>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Single cycle processor that can run simple mips commands. The processor is implemented by 6 parts: Pc counter/instruction Memory, Registers,
+                        ALU, Data Memory, and control module. The pc counter/ Instuction Memory simply stores memory and keeps track of the current instruction.
+                        The registers are the mips registers, simply an array of registers. The ALU implements the basic functions, such as load, store, add etc.
+                        The Data memory is the final memory stored used when user Loads. The control module manages different Instruction types, I type, R type, J type.
+                        The control module required a Karnaugh map to provide efficent parsing of the instruction type.
+                    </div>
                 </div>
-                <div class="collection_vid">
-                    <img src="images/VHDL/AnoSingleCycleProcessor.jpg" alt="" class="FlexPic" />
-                    <img src="images/VHDL/SingleCycleProcessor.jpg" alt="" class="FlexPic" />
-                </div>
-                <div class="heading">
-                    Description
-                </div>
-                <div class="text">
-                    Single cycle processor that can run simple mips commands. The processor is implemented by 6 parts: Pc counter/instruction Memory, Registers,
-                    ALU, Data Memory, and control module. The pc counter/ Instuction Memory simply stores memory and keeps track of the current instruction.
-                    The registers are the mips registers, simply an array of registers. The ALU implements the basic functions, such as load, store, add etc.
-                    The Data memory is the final memory stored used when user Loads. The control module manages different Instruction types, I type, R type, J type.
-                    The control module required a Karnaugh map to provide efficent parsing of the instruction type.
-                </div>
-            </div>
-            <div class="project">
-                <div class="heading">
-                    Pipeline Processor
-                </div>
-                <div class="collection_vid">
-                    <img src="images/VHDL/AnotPipProcessor_Pt1.jpg" alt="" class="FlexPic" />
-                    <img src="images/VHDL/AnotPipProcessor_Pt2.jpg" alt="" class="FlexPic" />
-                    <img src="images/VHDL/SingleCycleProcessor.JPG" alt="" class="FlexPic" />
+                <div class="project">
+                    <div class="heading">
+                        Pipeline Processor
+                    </div>
+                    <div class="collection_vid">
+                        <img src="images/VHDL/AnotPipProcessor_Pt1.jpg" alt="" class="FlexPic" />
+                        <img src="images/VHDL/AnotPipProcessor_Pt2.jpg" alt="" class="FlexPic" />
+                        <img src="images/VHDL/SingleCycleProcessor.JPG" alt="" class="FlexPic" />
 
-                </div>
-                <div class="heading">
-                    Description
-                </div>
-                <div class="text">
-                    Piped cycle processor that can run simple mips commands. The processor is implemented by 7 parts plus inbetween registers: Pc counter/instruction Memory, Registers,
-                    ALU, Data Memory, control module, and Hazard handler. The processor uses the same logic as the single cycle processor, but provides a register in between
-                    stages to allow for pipeline. The pipline saves registers need and provides them for the next instruction. This cuts the processing time to the longest path each pipe.
-                    The main issues that arises is the hazards that is created by the pipeline, hence the need for a hazard handler module. The hazard check the next instruction and compares
-                    the instruction in the memory stage to see if it causes a hazard. The hazard will produce a NOP if hazard is detected.
+                    </div>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Piped cycle processor that can run simple mips commands. The processor is implemented by 7 parts plus inbetween registers: Pc counter/instruction Memory, Registers,
+                        ALU, Data Memory, control module, and Hazard handler. The processor uses the same logic as the single cycle processor, but provides a register in between
+                        stages to allow for pipeline. The pipline saves registers need and provides them for the next instruction. This cuts the processing time to the longest path each pipe.
+                        The main issues that arises is the hazards that is created by the pipeline, hence the need for a hazard handler module. The hazard check the next instruction and compares
+                        the instruction in the memory stage to see if it causes a hazard. The hazard will produce a NOP if hazard is detected.
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="projects-group">
-            <div class="Bheading">
+            <div data-toggle="collapse" href="#collapse4" class="Bheading">
                 Python
             </div>
+            <div id="collapse4" class="panel-collapse collapse col">
+                <div class="project">
+                    <div class="heading">
+                        Network Analysis
+                    </div>
+                    <div class="collection_vid">
+                        <img src="https://raw.githubusercontent.com/usaruner/Algorithms_Analysis/main/Networks_Algorithms/Pictures/Results.JPG" alt="" class="FlexPic" />
+                    </div>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Created a network representation using a edge map. Generated random graphs based off Erdos-Renyi random graph generationg algorithm. The algorithm picks
+                        a random number between 0 and 1. Its will pick the probability of which a node will be added. The probability is calculated using the equation Log(1-r)/log(1-p).
+                        The algorithm works by pulling the networks median to around Erdos number to be around 5. Lastly, efficent functions to generate diameter, cluster coefficent
+                        and degree was implemented.
 
-            <div class="project">
-                <div class="heading">
-                    Running_AI
+                    </div>
                 </div>
-                <div class="collection_vid">
-                    <iframe class="Yvids" src="https://www.youtube.com/embed/KVb5StO06Vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="project">
+                    <div class="heading">
+                        Running_AI
+                    </div>
+                    <div class="collection_vid">
+                        <iframe class="Yvids" src="https://www.youtube.com/embed/KVb5StO06Vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                    <iframe class="Yvids" src="https://www.youtube.com/embed/PK_X0rSxxoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="Yvids" src="https://www.youtube.com/embed/PK_X0rSxxoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                    <iframe class="Yvids" src="https://www.youtube.com/embed/M-E4wpLPGic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="Yvids" src="https://www.youtube.com/embed/M-E4wpLPGic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                </div>
-                <div class="heading">
-                    Description
-                </div>
-                <div class="text">
-                    Based on the snake controls a game object/ player can only go left or right. They are constantly going forward and the object's goal
-                    is to collect fruits. The player is just a white dot and the fruits are red dots. The AI uses MLAgents on Unity to run tests and MLAgents
-                    uses Tensorflow to control the AI. I trained the AI using a exponent fruit reward system, but also implemented a punishment when it hits
-                    the wall. I went through more than 10hrs or seprate training for the AI, varying the hidden nodes and expanding the learning rate.
-                    The best Average score I gotten was about 80 which is around only 8 berries collected within 5000 steps. The score was average, but
-                    wasn't what I was expecting. The training took 1hr and around 3,000,000 trials.
+                    </div>
+                    <div class="heading">
+                        Description
+                    </div>
+                    <div class="text">
+                        Based on the snake controls a game object/ player can only go left or right. They are constantly going forward and the object's goal
+                        is to collect fruits. The player is just a white dot and the fruits are red dots. The AI uses MLAgents on Unity to run tests and MLAgents
+                        uses Tensorflow to control the AI. I trained the AI using a exponent fruit reward system, but also implemented a punishment when it hits
+                        the wall. I went through more than 10hrs or seprate training for the AI, varying the hidden nodes and expanding the learning rate.
+                        The best Average score I gotten was about 80 which is around only 8 berries collected within 5000 steps. The score was average, but
+                        wasn't what I was expecting. The training took 1hr and around 3,000,000 trials.
 
+                    </div>
                 </div>
             </div>
         </div>

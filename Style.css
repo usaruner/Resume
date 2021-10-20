@@ -215,10 +215,10 @@ Heading-Bar {
     padding-inline: 25px;
     width: 70%;
     padding-inline:10vw;
-    padding-block: 10vw;
+    padding-block: 5vw;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px
+    margin-bottom: 0px;
 }
 .project {
     display: flex;
@@ -232,6 +232,9 @@ Heading-Bar {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+.col{
+    overflow:hidden;
 }
 .FlexPic {
     max-width: 50vw;
@@ -321,8 +324,14 @@ Heading-Bar {
 .Bheading {
     text-align: center;
     font-size: 4vh;
-    border-bottom: 2px solid;
     border-color: #e7e9eb;
+    border-radius: 25px;
+    background: lightgray;
+}
+.Bheading:hover {
+    background: #a0a0a0;
+    transition: 0.5s;
+    border-bottom: 2px solid;
 }
 .heading {
     text-align: center;
