@@ -29,7 +29,14 @@
             }
 
         }
-
+        function changesym(ele) {
+            h = ele.getElementsByTagName('a')[1];
+            if (h.innerHTML == "+") {
+                h.innerHTML = "-";
+            } else {
+                h.innerHTML = "+";
+            }
+        }
     </script>
 
 </head>
@@ -47,8 +54,9 @@
     </div>
     <div class="project-wrapper " >
         <div class="projects-group">
-            <div data-toggle="collapse" href="#collapse1" class="Bheading">
+            <div data-toggle="collapse" href="#collapse1" onclick="changesym(this)" class="Bheading">
                 <a >Embedded Systems</a>
+                <a style="float:right;padding-inline-end:1vw">+</a>
             </div>
             <div id="collapse1" class="panel-collapse collapse col" aria-expanded="false" style="height:0px" >
                 <div class="project">
@@ -114,8 +122,9 @@
             </div>
         </div>
         <div class="projects-group">
-            <div data-toggle="collapse" href="#collapse2" class="Bheading">
+            <div data-toggle="collapse" href="#collapse2" onclick="changesym(this)" class="Bheading">
                 Java
+                <a style="float:right;padding-inline-end:1vw" >+</a>
             </div>
             <div id="collapse2" class="panel-collapse collapse col" aria-expanded="false" style="height:0px">
                 <div class="project">
@@ -133,8 +142,9 @@
             </div>
         </div>
         <div class="projects-group">
-            <div data-toggle="collapse" href="#collapse3" class="Bheading">
+            <div data-toggle="collapse" href="#collapse3" onclick="changesym(this)" class="Bheading">
                 VHDL
+                <a style="float:right;padding-inline-end:1vw" >+</a>
             </div>
             <div id="collapse3" class="panel-collapse collapse col" aria-expanded="false" style="height:0px">
                 <div class="project">
@@ -181,8 +191,9 @@
         </div>
 
         <div class="projects-group">
-            <div data-toggle="collapse" href="#collapse4" class="Bheading">
+            <div data-toggle="collapse" href="#collapse4" onclick="changesym(this)" class="Bheading">
                 Python
+                <a style="float:right;padding-inline-end:1vw" >+</a>
             </div>
             <div id="collapse4" class="panel-collapse collapse col" aria-expanded="false" style="height:0px">
                 <div class="project">
