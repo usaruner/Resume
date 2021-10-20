@@ -1,6 +1,7 @@
 ﻿html, body {
     margin: 0px;
     overflow-x: hidden;
+    font-family: Poppins,sans-serif;
 }
 
 .Icon {
@@ -214,7 +215,7 @@ Heading-Bar {
     background-color: rgb(228 228 228 / 0.48);
     padding-inline: 25px;
     width: 70%;
-    padding-inline:10vw;
+    padding-inline:20vw;
     padding-block: 5vw;
     margin-left: auto;
     margin-right: auto;
@@ -235,6 +236,7 @@ Heading-Bar {
 }
 .col{
     overflow:hidden;
+    transition:1s;
 }
 .FlexPic {
     max-width: 50vw;
@@ -322,11 +324,11 @@ Heading-Bar {
     color: white;
 }
 .Bheading {
-    text-align: center;
     font-size: 4vh;
     border-color: #e7e9eb;
-    border-radius: 25px;
+    border-radius: 5px;
     background: lightgray;
+    cursor:pointer;
 }
 .Bheading:hover {
     background: #a0a0a0;
