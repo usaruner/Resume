@@ -56,6 +56,19 @@ Heading-Bar {
 
 }
 
+.text_switchon {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 5vh;
+    transition: 2s;
+    min-inline-size: 20vw;
+}
 .NavBar-wrapper a:hover {
     color: black;
 }

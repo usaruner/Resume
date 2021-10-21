@@ -9,6 +9,9 @@
     </div>
     <link rel="stylesheet" href="Style.css">
     <script>
+        window.onload = function () {
+            var refButton = document.getElementById("btnButton");
+        };
         function reportWindowSize() {
             if (window.innerWidth > 800) {
                 document.getElementById("mySidepanel").style.height = document.getElementById("nav").style.height;
@@ -27,7 +30,7 @@
             }
             
         }
-
+        
     </script>
 </head>
 <body>
@@ -43,18 +46,35 @@
         </div>
 </div>
     <div class="WelcomeBox">
-        <div class="WelcomePhoto" style="background-image:url(images/Prolong_Welcome.png)">
-            WELCOME
+        <div class="Welcome-Content-wrapper" id="hoverwel" style="background-image:url(images/Prolong_Welcome.png)">
+            <div class="text_switchon" style="color:white;font-size: 2vh;opacity:0;margin-inline:20vw;width:60%"> Hi! My name is Henry Feng. I am a recent computer science & engineering grad from the University of California, Irvine. This is my portfolio.</div>
+            <div class="text_switchon" style="color:white;font-size: 5vh;"> Welcome</div>
+            <script>
+                var how = document.getElementById("hoverwel");
+                console.log(how);
+                how.addEventListener("mouseover", function (event) {
+                    back = how.getElementsByTagName("div")[0];
+                    front = how.getElementsByTagName("div")[1];
+                    back.style.opacity = "1";
+                    front.style.opacity = "0";
+                }, false);
+                how.addEventListener("mouseout", function (event) {
+                    back = how.getElementsByTagName("div")[0];
+                    front = how.getElementsByTagName("div")[1];
+                    back.style.opacity = "0";
+                    front.style.opacity = "1";
+                }, false);
+            </script>
         </div>
         <div class="Welcome-Contents">
             <a class="Welcome-Content-wrapper" style="background-image: url(images/Projects.jpg)" href="projects.html">
-                <div class="img_text"> PROJECTS</div>
+                <div class="img_text"> Projects</div>
             </a>
             <a class="Welcome-Content-wrapper" style="background-image:url(images/UCI.png)" href="education.html">
-                <div class="img_text"> EDUCATION</div>
+                <div class="img_text"> Education</div>
             </a>
             <a class="Welcome-Content-wrapper" style="background-image:url(images/About.png)" href="about.html">
-                <div class="img_text"> ABOUT</div>
+                <div class="img_text"> About</div>
             </a>
         </div>
         <div style="text-align: center; width:100%; border:1px solid black">
